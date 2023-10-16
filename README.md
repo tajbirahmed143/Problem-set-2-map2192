@@ -21,7 +21,7 @@ For this task, we defined a function `generate_random_filters` to create random 
 We displayed both the color and grayscale images to visualize the preprocessing steps:
 
 ### Color Image (224x224)
-![Color Image](insert_color_image_url_here)
+![Color Image](https://colab.research.google.com/drive/1SZJuRMIzQ-KSVgiBuvgxWsCU7yVyyLsf#scrollTo=FaSbt5MdnZ9s)
 
 This is the resized color image with dimensions 224x224 pixels.
 
