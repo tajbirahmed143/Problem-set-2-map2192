@@ -40,6 +40,7 @@ image_r = image[131:355, 252:476, :]
 plot(image_r)
 ```
 The image is sliced to obtain a smaller, focused section, and this cropped image is visualized.
+![Alternative text](1.png)
 
 ## Step 5: Convert to Grayscale Using Different Methods
 ## Averaging Method
@@ -54,6 +55,7 @@ Technical Explanation: This method simply takes the mean of the RGB values for e
 Qualitative Explanation: This method is straightforward and computationally efficient, but it may not preserve the perceived brightness of the original image since it treats all color channels equally.
 
 Preferences: You might prefer this for speed and simplicity when accuracy is not critical.
+![Alternative text](2.png)
 
 ## Channel Mixing Method
 ```md
@@ -77,6 +79,8 @@ Qualitative Explanation: This allows for a bit more control over how much each c
 
 Preferences: Useful when one channel contains noise or irrelevant information, or when you need to emphasize or deemphasize particular features. You might choose this when you want control over the weights assigned to each channel, potentially due to domain-specific knowledge or particular image characteristics.
 
+![Alternative text](3.png)
+
 ## Red Channel Method
 ```md
 image_red = image_r[:,:,0]
@@ -87,6 +91,8 @@ Only the red channel is displayed, ignoring green and blue channels. Technical E
 Qualitative Explanation: This may preserve or highlight features that are primarily visible in the red channel, but neglects information in the green and blue channels.
 
 Preferences: Suitable when important details are mostly contained in the red channel or for certain scientific applications where the red channel is of primary interest. This might be your go-to when processing images where the information of interest is predominantly in the red channel (for instance, some astronomical images).
+
+![Alternative text](4.png)
 
 
 ## Luminance Method
@@ -102,6 +108,7 @@ Qualitative Explanation: This approach often provides results that are aesthetic
 
 Preferences: When a visually accurate representation of the original image's brightness and contrast is required, such as in professional photography or media production. Often preferred for a perceptually meaningful conversion, providing grayscale images that retain the luminosity characteristics of the original.
 
+![Alternative text](5.png)
 
 
 ## Step 6: Apply Random Filters
@@ -118,8 +125,10 @@ Ten randomly generated filters of increasing size are applied to the grayscale i
 
 ## Filter 1
 Feature Map:
+![Alternative text](6.png)
 
 Filter:
+![Alternative text](7.png)
 
 
 ## Filter 2
