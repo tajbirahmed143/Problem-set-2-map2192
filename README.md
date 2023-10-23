@@ -10,6 +10,6 @@ def plot(x):
     ax.axis('off')
     fig.set_size_inches(5, 5)
     plt.show()
-```
+
 ```
 ## Step 2: Define Plotting Function
