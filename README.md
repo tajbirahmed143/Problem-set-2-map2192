@@ -40,7 +40,7 @@ image_r = image[131:355, 252:476, :]
 plot(image_r)
 ```
 The image is sliced to obtain a smaller, focused section, and this cropped image is visualized.
-![Alternative text](1.png)
+![Alternative text](resize.png)
 
 ## Step 5: Convert to Grayscale Using Different Methods
 ## Averaging Method
@@ -55,8 +55,7 @@ Technical Explanation: This method simply takes the mean of the RGB values for e
 Qualitative Explanation: This method is straightforward and computationally efficient, but it may not preserve the perceived brightness of the original image since it treats all color channels equally.
 
 Preferences: You might prefer this for speed and simplicity when accuracy is not critical.
-![Alternative text](2.png)
-
+![Alternative text](AveragingMethod.png)
 ## Channel Mixing Method
 ```md
 red_coefficient = 0.05
@@ -79,7 +78,7 @@ Qualitative Explanation: This allows for a bit more control over how much each c
 
 Preferences: Useful when one channel contains noise or irrelevant information, or when you need to emphasize or deemphasize particular features. You might choose this when you want control over the weights assigned to each channel, potentially due to domain-specific knowledge or particular image characteristics.
 
-![Alternative text](3.png)
+![Alternative text](ChannelMixingMethod.png)
 
 ## Red Channel Method
 ```md
@@ -92,7 +91,7 @@ Qualitative Explanation: This may preserve or highlight features that are primar
 
 Preferences: Suitable when important details are mostly contained in the red channel or for certain scientific applications where the red channel is of primary interest. This might be your go-to when processing images where the information of interest is predominantly in the red channel (for instance, some astronomical images).
 
-![Alternative text](4.png)
+![Alternative text](redChannelMixingMethod.png)
 
 
 ## Luminance Method
@@ -108,7 +107,7 @@ Qualitative Explanation: This approach often provides results that are aesthetic
 
 Preferences: When a visually accurate representation of the original image's brightness and contrast is required, such as in professional photography or media production. Often preferred for a perceptually meaningful conversion, providing grayscale images that retain the luminosity characteristics of the original.
 
-![Alternative text](5.png)
+![Alternative text](LuminanceMethod.png)
 
 
 ## Step 6: Apply Random Filters
@@ -125,81 +124,95 @@ Ten randomly generated filters of increasing size are applied to the grayscale i
 
 ## Filter 1
 Feature Map:
-![Alternative text](6.png)
+
+![Alternative text](image1.png)
 
 Filter:
-![Alternative text](7.png)
 
+![Alternative text](filter1.png)
 
 ## Filter 2
 Feature Map:
 
+![Alternative text](image2.png)
 
 Filter:
 
+![Alternative text](filter2.png)
 
 
 ## Filter 3
 Feature Map:
 
+![Alternative text](image3.png)
 
 Filter:
 
-
+![Alternative text](filter3.png)
 
 ## Filter 4
 Feature Map:
 
+![Alternative text](image4.png)
 
 Filter:
 
+![Alternative text](filter4.png)
 
 ## Filter 5
 Feature Map:
 
+![Alternative text](image5.png)
 
 
 Filter:
 
-
+![Alternative text](filter5.png)
 
 ## Filter 6
 Feature Map:
 
+![Alternative text](image6.png)
 
 Filter:
 
+![Alternative text](filter6.png)
 
 ## Filter 7
 Feature Map:
 
+![Alternative text](image7.png)
 
 Filter:
 
+![Alternative text](filter7.png)
 
-# #Filter 8
+# Filter 8
 Feature Map:
 
-image
+![Alternative text](image8.png)
 
 Filter:
 
-image
+![Alternative text](filter8.png)
 
 ## Filter 9
 Feature Map:
 
+![Alternative text](image9.png)
 
 Filter:
 
+![Alternative text](filter9.png)
 
 ## Filter 10
 Feature Map:
 
+![Alternative text](image10.png)
 
 Filter:
 
-
+![Alternative text](filter10.png)
 ## Step 7: Apply Hand-Picked Filters
 # Mean Removal Filter
 ```md
@@ -215,6 +228,7 @@ Explanation: Mean removal, or high-pass filtering, amplifies or enhances the edg
 
 Use Case: Employed to accentuate details in the image, making edges and textures more pronounced, which might be particularly useful in scenarios where detail extraction or pattern recognition is essential.
 
+![Alternative text](MeanRemovalFilter.png)
 
 # Unsharp Masking Filter
 ```md
@@ -228,6 +242,7 @@ Explanation: This filter tends to sharpen the image by enhancing the edge contra
 
 Use Case: Utilized in scenarios where clarity and definition are pivotal, like in medical imaging, to aid in the clear visualization of edges, boundaries, and fine details.
 
+![Alternative text](UnsharpMaskingFilter.png)
 
 ## Gaussian Filter
 ```md
@@ -243,6 +258,7 @@ Explanation: Gaussian blur is a low-pass filter that suppresses high-frequency c
 
 Use Case: Ideal for noise reduction, it is commonly utilized in scenarios where the smoother gradient transitions and subdued details are preferred, such as in pre-processing steps for object segmentation.
 
+![Alternative text](GaussianBlur.png)
 
 # Emboss Filter
 ```md
@@ -258,6 +274,7 @@ Explanation: The emboss filter creates a three-dimensional relief effect on the 
 
 Use Case: Often used in graphic design and art for stylistic purposes, or to uncover and explore texture-related details in scientific and medical imaging.
 
+![Alternative text](EmbossFilter.png)
 
 # Sobel Filter
 ```md
@@ -273,6 +290,7 @@ Explanation: The Sobel filter is designed to perform edge detection, enhancing r
 
 Use Case: A staple in computer vision applications where edge information is crucial, like in object detection, segmentation, or applications where the identification of patterns, boundaries, or transitions is paramount.
 
+![Alternative text](SobelFilter.png)
 
 ```md
 
