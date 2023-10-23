@@ -3,7 +3,7 @@
 [Colab Notebook](https://colab.research.google.com/drive/1ew7dHNuk4Nt4YuSXSvjGGTY7pMrjIFui?usp=sharing)
 ## Step 1: Import Necessary Libraries
 ```md
-```python
+
 def plot(x):
     fig, ax = plt.subplots()
     im = ax.imshow(x, cmap = 'gray')
