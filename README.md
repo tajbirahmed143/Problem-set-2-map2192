@@ -30,6 +30,8 @@ image = io.imread("https://images.photowall.com/products/48203/outdoor-kitten.jp
 image = image[:,:,:]
 plot(image)
 ```
+Here, we retrieve and display the original image of puppies from a URL.
+
 ## Step 4: Resize Image
 ## Step 5: Convert to Grayscale Using Different Methods
 ## Channel Mixing Method
@@ -37,7 +39,9 @@ plot(image)
 ##
 ##
 
-
+```markdown
+Kitten
+```
 
 
 
@@ -47,5 +51,5 @@ plot(image)
 
 
 ```md
-
+https://images.photowall.com/products/48203/outdoor-kitten.jpg?h=699&q=85
 ```
