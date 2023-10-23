@@ -39,9 +39,8 @@ Here, we retrieve and display the original image of puppies from a URL.
 ##
 ##
 
-```markdown
-Kitten
-```
+![Cute kitten](https://images.photowall.com/products/48203/outdoor-kitten.jpg?h=699&q=85)
+
 
 
 
